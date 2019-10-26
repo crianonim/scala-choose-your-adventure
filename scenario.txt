@@ -1,0 +1,15 @@
+#start
+Welcome to the test of this wonderful Game,
+You can go left or right from here
+- Go left -> #left
+- Go right -> #right
+
+#left
+You decided to go left.
+Very interesting
+- Go back -> #start
+
+#right
+Bad move
+You loose. Start again
+- Start again -> #start
