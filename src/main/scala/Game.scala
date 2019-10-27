@@ -5,7 +5,22 @@ object Game {
   def main(args: Array[String]): Unit = {
     println("Welcome to Choose Your Adventure!");
     val dialogs: Map[String, Dialog] = getScenario()
-    println(dialogs)
+    // println(dialogs)
+    gameLoop(dialogs, "start")
+  }
+
+  def gameLoop(dialogs: Map[String, Dialog], dialogName: String): Unit = {
+    var current = "start";
+    var playing = true
+    while (playing) { 
+      println(dialogs.get(current).get.display())
+      val option = scala.io.StdIn.readInt()
+      if (option == 0) {
+        playing = false
+      } else {
+        current = dialogs.get(current).get.options(option - 1).goTo
+      }
+    }
   }
 
   def getScenario(): Map[String, Dialog] = {
