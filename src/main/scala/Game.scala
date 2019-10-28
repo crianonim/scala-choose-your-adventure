@@ -12,7 +12,7 @@ object Game {
   def gameLoop(dialogs: Map[String, Dialog], dialogName: String): Unit = {
     var current = "start";
     var playing = true
-    while (playing) { 
+    while (playing) {
       println(dialogs.get(current).get.display())
       val option = scala.io.StdIn.readInt()
       if (option == 0) {
@@ -28,25 +28,21 @@ object Game {
     var text = "";
     var options = Vector.empty[DialogOption]
     var listOfDial = List.empty[(String, Dialog)]
+    val IdExtractor = """^#(.+)""".r
+    val EmpyExtractor = """^$""".r
+    val OptionExtractor = """^- (.+) -> #(.+)$""".r
     for (line <- Source.fromFile("scenario.txt").getLines) {
-      if (line.length() == 0) {
-        val dial = Dialog(id, text, options)
-        listOfDial = (id, dial) :: listOfDial
-        id = "";
-        text = "";
-        options = Vector.empty[DialogOption]
-      } else {
-        if (line.startsWith("#")) {
-          id = line.substring(1)
-        } else if (line.startsWith("- ")) {
-          val option = line.substring(2)
-          val arr = option.indexOf("->")
-          val text = option.substring(0, arr - 1)
-          val goTo = option.substring(arr + 4)
+      line match {
+        case EmpyExtractor() =>
+          val dial = Dialog(id, text, options)
+          listOfDial = (id, dial) :: listOfDial
+          id = "";
+          text = "";
+          options = Vector.empty[DialogOption]
+        case IdExtractor(foundId) => id = foundId
+        case OptionExtractor(text, goTo) =>
           options = options :+ DialogOption(text, goTo)
-        } else {
-          text += line + "\n"
-        }
+        case _ => text += line + "\n"
       }
     }
     listOfDial.toMap
