@@ -4,13 +4,12 @@ import scala.io.Source
 object Game {
   def main(args: Array[String]): Unit = {
     println("Welcome to Choose Your Adventure!");
-    val dialogs: Map[String, Dialog] = getScenario()
-    // println(dialogs)
+    val dialogs: Map[String, Dialog] = getScenario("scenario.txt")
     gameLoop(dialogs, "start")
   }
 
   def gameLoop(dialogs: Map[String, Dialog], dialogName: String): Unit = {
-    var current = "start";
+    var current = dialogName;
     var playing = true
     while (playing) {
       println(dialogs.get(current).get.display())
@@ -23,15 +22,19 @@ object Game {
     }
   }
 
-  def getScenario(): Map[String, Dialog] = {
-    var id: String = ""
-    var text = "";
-    var options = Vector.empty[DialogOption]
+  def getScenario(fileName: String): Map[String, Dialog] = {
     var listOfDial = List.empty[(String, Dialog)]
+
     val IdExtractor = """^#(.+)""".r
     val EmpyExtractor = """^$""".r
     val OptionExtractor = """^- (.+) -> #(.+)$""".r
-    for (line <- Source.fromFile("scenario.txt").getLines) {
+
+     // currently built Dialog parts
+     var id: String = ""
+     var text = "";
+     var options = Vector.empty[DialogOption]
+
+    for (line <- Source.fromFile(fileName).getLines) {
       line match {
         case EmpyExtractor() =>
           val dial = Dialog(id, text, options)
