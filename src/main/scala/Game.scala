@@ -1,11 +1,13 @@
 package site.jans.game
 import scala.io.Source
+import scala.collection.mutable
 
 object Game {
   def main(args: Array[String]): Unit = {
     println("Welcome to Choose Your Adventure!");
     val dialogs: Map[String, Dialog] = getScenario("scenario.txt")
-    gameLoop(dialogs, "start")
+    Screept.evaluate(Screept.parseIntoTokens("100 30 = 'rowne' 'nie rowne' ?"),mutable.Map[String,String]())
+    // gameLoop(dialogs, "start")
   }
 
   def gameLoop(dialogs: Map[String, Dialog], dialogName: String): Unit = {
