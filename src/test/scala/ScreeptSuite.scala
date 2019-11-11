@@ -53,7 +53,19 @@ class ScreeptSuite extends FunSuite {
     assert(eval("True False ; 1 2 = ? ;")=="False")
     assert(eval("True False ( 1 2 = ) ? ")=="False")
     assert(eval("Jan name := name DEBUG =")=="1")
+  }
 
-
+  test("test LogicOperators operators"){
+    val eval=Screept.evaluate(LogicOperators.operators ++ BasicOperators.operators)(mutable.Map[String,String]()) _
+    assert(eval("1 1 &")=="1")
+    assert(eval("0 1 &")=="0")
+    assert(eval("0 0 &")=="0")
+    assert(eval("1 1 |")=="1")
+    assert(eval("1 0 |")=="1")
+    assert(eval("0 0 |")=="0")
+    assert(eval("0.0 !")=="1")
+    assert(eval("1.0 !")=="0")
+    assert(eval("1 1 & 0 1 & |")=="1")
+    assert(eval(" 1 1 &  ( 0 1 & ) |")=="1")
   }
 }
