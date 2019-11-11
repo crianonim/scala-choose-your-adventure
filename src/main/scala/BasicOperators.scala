@@ -8,8 +8,12 @@ object BasicOperators {
   ): Seq[String] = {
     list map (Screept.getValue(_, ctx))
   }
-  def isEqual(l: Seq[Any]): Boolean = {
-    l(0) == l(1)
+  def isEqual(l: Seq[String]): Boolean = {
+      try {
+          l(0).toDouble == l(1).toDouble
+      } catch  {
+        case x:Throwable => l(0)==l(1)
+    }
   }
   val operators = mutable.Map(
     "=" -> Operator(2, (l, ctx) => if (isEqual(toValue(l, ctx))) "1" else "0"),
