@@ -9,7 +9,14 @@ object Screept {
   def getValue(operand: String, ctx: Context) = {
     ctx.getOrElse(operand, operand)
   }
-
+  def toBoolean(x:Any):Boolean = {
+    x match {
+     case 0 => false
+     case "" => false
+     case null => false
+     case _ => true
+    }
+  }
   def parseIntoTokens(s: String) = {
     val tokens = new Stack[String]()
     var ct = "";
