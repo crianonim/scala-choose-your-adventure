@@ -1,16 +1,13 @@
 package site.jans.game
+
 import scala.io.Source
 import scala.collection.mutable
 import site.jans.screept._
 
 object Game {
-  def main(args: Array[String]): Unit = {
-    println("Welcome to Choose Your Adventure!");
-    val dialogs: Map[String, Dialog] = getScenario("scenario.txt")
-    val eval=Screept.evaluate(MathOperators.operators ++ BasicOperators.operators)(mutable.Map[String,String]()) _
-    eval("true false 0 ?")
-    eval("5 a := 6 + 11 =")
-    // gameLoop(dialogs, "start")
+
+  def init(scenarioText: String, startDialogName: String): Unit = {
+    gameLoop(getScenario(scenarioText), startDialogName)
   }
 
   def gameLoop(dialogs: Map[String, Dialog], dialogName: String): Unit = {
@@ -26,33 +23,39 @@ object Game {
       }
     }
   }
+  def readScenarioFile(fileName: String): String = {
+    Source.fromFile(fileName).getLines.mkString("\n")
+  }
 
-  def getScenario(fileName: String): Map[String, Dialog] = {
+  def getScenario(scenarioText: String): Map[String, Dialog] = {
     var listOfDial = List.empty[(String, Dialog)]
 
     val IdExtractor = """^#(.+)""".r
     val EmpyExtractor = """^$""".r
     val OptionExtractor = """^- (.+) -> #(.+)$""".r
 
-     // currently built Dialog parts
-     var id: String = ""
-     var text = "";
-     var options = Vector.empty[DialogOption]
+    // currently built Dialog parts
+    var id: String = ""
+    var text = "";
+    var options = Vector.empty[DialogOption]
 
-    for (line <- Source.fromFile(fileName).getLines) {
+    def addDialog():Unit = {
+      val dial = Dialog(id, text, options)
+      listOfDial = (id, dial) :: listOfDial
+      id = "";
+      text = "";
+      options = Vector.empty[DialogOption]
+    }
+    for (line <- scenarioText.split("\n")) {
       line match {
-        case EmpyExtractor() =>
-          val dial = Dialog(id, text, options)
-          listOfDial = (id, dial) :: listOfDial
-          id = "";
-          text = "";
-          options = Vector.empty[DialogOption]
+        case EmpyExtractor() => addDialog()
         case IdExtractor(foundId) => id = foundId
         case OptionExtractor(text, goTo) =>
           options = options :+ DialogOption(text, goTo)
         case _ => text += line + "\n"
       }
     }
+    addDialog()
     listOfDial.toMap
   }
 }
