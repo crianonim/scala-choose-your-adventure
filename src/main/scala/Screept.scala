@@ -39,7 +39,8 @@ object Screept {
     tokens.filter(x => x != "").reverse.toList
   }
   
-  def evaluate(operators: Map[String,Operator],tokens: Seq[String], ctx: Context) = {
+  def evaluate(operators: Map[String,Operator])( ctx: Context)(text:String) = {
+    val tokens=parseIntoTokens(text)
     val stack = new Stack[String]()
     println("TOKENS", tokens)
     for (token <- tokens) {

@@ -7,7 +7,9 @@ object Game {
   def main(args: Array[String]): Unit = {
     println("Welcome to Choose Your Adventure!");
     val dialogs: Map[String, Dialog] = getScenario("scenario.txt")
-    Screept.evaluate(MathOperators.operators ++ BasicOperators.operators,Screept.parseIntoTokens("true false 0 ?"),mutable.Map[String,String]())
+    val eval=Screept.evaluate(MathOperators.operators ++ BasicOperators.operators)(mutable.Map[String,String]()) _
+    eval("true false 0 ?")
+    eval("5 a := 6 + 11 =")
     // gameLoop(dialogs, "start")
   }
 
