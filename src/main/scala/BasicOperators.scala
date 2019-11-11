@@ -29,6 +29,7 @@ object BasicOperators {
     ),
     ";" -> noopOperator,
     "(" -> noopOperator,
-    ")" -> noopOperator
+    ")" -> noopOperator,
+    "DEBUG" -> Operator(1, (l, ctx) => {println(ctx);l(0)})
   )
 }
