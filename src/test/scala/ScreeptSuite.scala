@@ -34,6 +34,15 @@ class ScreeptSuite extends FunSuite {
     assert(eval("-10 4 / -2.5 =")=="1")
     assert(eval("-10 -3 * 30 =")=="1")
     assert(eval("-10 2 * -20 =")=="1")
+    assert(eval("10 5 >")=="1")
+    assert(eval("10 10.0 >")=="0")
+    assert(eval("10 5 <")=="0")
+    assert(eval("10 10.0 <")=="0")
+    assert(eval("10 5 >=")=="1")
+    assert(eval("10 10.0 >=")=="1")
+    assert(eval("10 5 <=")=="0")
+    assert(eval("10 10.0 <=")=="1")
+
   }
   test("test BasicOperators operators"){
     val eval=Screept.evaluate(MathOperators.operators ++ BasicOperators.operators)(mutable.Map[String,String]()) _
