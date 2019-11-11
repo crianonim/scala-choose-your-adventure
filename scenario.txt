@@ -1,8 +1,8 @@
 #start
 Welcome to the test of this wonderful Game,
 You can go left or right from here
-- Go left -> #left
-- Go right -> #right
+- Go left -> turn 1 + turn := #left
+- Go right [a 1 =] -> #right
 
 #left
 You decided to go left.
