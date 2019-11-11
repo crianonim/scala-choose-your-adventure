@@ -1,7 +1,9 @@
-package site.jans.game
+package site.jans.screept
 
 import scala.collection.mutable.Stack
 import scala.collection.mutable.Map
+
+case class Operator(arity: Int, f: Function2[Seq[String], Map[String, String], String])
 
 object Screept {
   type Context = Map[String, String]
@@ -36,42 +38,8 @@ object Screept {
     tokens.push(ct)
     tokens.filter(x => x != "").reverse.toList
   }
-  case class Operator(arity: Int, f: Function2[Seq[String], Context, String])
-  val operators = Map[String, Operator]()
-  operators("+") = Operator(
-    2,
-    (l, ctx) =>
-      (getValue(l(0), ctx).toDouble + getValue(l(1), ctx).toDouble).toString()
-  )
-  operators("-") = Operator(
-    2,
-    (l, ctx) =>
-      (getValue(l(0), ctx).toDouble - getValue(l(1), ctx).toDouble).toString()
-  )
-  operators("*") = Operator(
-    2,
-    (l, ctx) =>
-      (getValue(l(0), ctx).toDouble * getValue(l(1), ctx).toDouble).toString()
-  )
-  operators("/") = Operator(
-    2,
-    (l, ctx) =>
-      (getValue(l(0), ctx).toDouble / getValue(l(1), ctx).toDouble).toString()
-  )
-  operators("?") = Operator(
-    3,
-    (l, ctx) =>
-      (if (getValue(l(0), ctx) == "0") getValue(l(2), ctx)
-       else getValue(l(1), ctx))
-  )
-  operators(":=") = Operator(2, (l, ctx) => {
-    ctx(l(1)) = getValue(l(0), ctx); getValue(l(0), ctx)
-  })
-  operators("=") = Operator(
-    2,
-    (l, ctx) => if (getValue(l(0), ctx) == getValue(l(1), ctx)) "1" else "0"
-  )
-  def evaluate(tokens: Seq[String], ctx: Context) = {
+  
+  def evaluate(operators: Map[String,Operator],tokens: Seq[String], ctx: Context) = {
     val stack = new Stack[String]()
     println("TOKENS", tokens)
     for (token <- tokens) {
