@@ -41,5 +41,8 @@ class ScreeptSuite extends FunSuite {
     assert(eval("Jan name := name Jan =")=="1")
     assert(eval("True False 1 1 = ?")=="True")
     assert(eval("True False 1 2 = ?")=="False")
+    assert(eval("True False ; 1 2 = ? ;")=="False")
+    assert(eval("True False ( 1 2 = ) ? ")=="False")
+
   }
 }

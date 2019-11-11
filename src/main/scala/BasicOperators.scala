@@ -9,12 +9,13 @@ object BasicOperators {
     list map (Screept.getValue(_, ctx))
   }
   def isEqual(l: Seq[String]): Boolean = {
-      try {
-          l(0).toDouble == l(1).toDouble
-      } catch  {
-        case x:Throwable => l(0)==l(1)
+    try {
+      l(0).toDouble == l(1).toDouble
+    } catch {
+      case x: Throwable => l(0) == l(1)
     }
   }
+  val noopOperator = Operator(1, (l, ctx) => l(0))
   val operators = mutable.Map(
     "=" -> Operator(2, (l, ctx) => if (isEqual(toValue(l, ctx))) "1" else "0"),
     ":=" -> Operator(2, (l, ctx) => {
@@ -25,6 +26,9 @@ object BasicOperators {
       (l, ctx) =>
         if (Screept.getValue(l(2), ctx) == "0") Screept.getValue(l(1), ctx)
         else Screept.getValue(l(0), ctx)
-    )
+    ),
+    ";" -> noopOperator,
+    "(" -> noopOperator,
+    ")" -> noopOperator
   )
 }
