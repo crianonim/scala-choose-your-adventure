@@ -9,29 +9,34 @@ object Game {
   def init(
       scenarioText: String,
       startDialogName: String,
-      ctx: mutable.Map[String, String]
+      ctx: mutable.Map[String, String],
+      operators: Map[String,Operator]
   ): Unit = {
-    gameLoop(getScenario(scenarioText), startDialogName, ctx)
+    gameLoop(getScenario(scenarioText), startDialogName, ctx, operators)
   }
 
   def gameLoop(
       dialogs: Map[String, Dialog],
       dialogName: String,
-      ctx: mutable.Map[String, String]
+      ctx: mutable.Map[String, String],
+      operators: Map[String,Operator]
+
   ): Unit = {
     var current = dialogName;
-    var playing = true
+    var playing = true;
+    val eval=Screept.evaluate(operators)(ctx) _
     while (playing) {
-      println(ctx)
-      println(dialogs.get(current).get.display())
+      println("CONTEXT:",ctx)
+      val dialog=dialogs.get(current).get
+      println("TITLE: "+dialog.title)
+      val validOptions=dialog.options.filter(x=>x.condition.size==0 || eval(x.condition)!="0")
+      println(validOptions.zipWithIndex map(x=>(x._2+1)+") "+x._1.text) mkString("\n") )
       val option = scala.io.StdIn.readInt()
       if (option == 0) {
         playing = false
       } else {
-        val toRun = dialogs.get(current).get.options(option - 1).run
-        val result = Screept.evaluate(
-          LogicOperators.operators ++ BasicOperators.operators ++ MathOperators.operators
-        )(ctx)(toRun)
+        val toRun =validOptions(option - 1).run
+        val result = eval(toRun)
         if (result(0) == '#')
           current = result.tail
       }

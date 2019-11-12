@@ -3,11 +3,14 @@ Welcome to the test of this wonderful Game,
 You can go left or right from here
 - Go left [] turn 1 + turn := DEBUG #left
 - Go right [a 1 =] #right
+- It's Time! [turn 2 >] #left
+- Pick Sword [flag_sword 1 = !] 1 flag_sword :=
 
 #left
 You decided to go left.
 Very interesting
 - Go back [] #start
+- Kill dragon [flag_sword 1 =] #right
 
 #right
 Bad move
