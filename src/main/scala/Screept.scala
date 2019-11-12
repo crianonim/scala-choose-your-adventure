@@ -52,12 +52,15 @@ object Screept {
         val operator = operators(token)
         val args = new Stack[String]()
         for (i <- (0 until operator.arity)) args.push(stack.pop())
-        stack.push(operator.f(args.toList, ctx))
+        val result=operator.f(args.toList, ctx)
+        if (operator.arity>0){
+          stack.push(result)
+        }
       } else {
         stack.push(token)
       }
       // println("STACK", stack, "CTX", ctx)
     }
-    stack.pop()
+    getValue(stack.pop(),ctx)
   }
 }

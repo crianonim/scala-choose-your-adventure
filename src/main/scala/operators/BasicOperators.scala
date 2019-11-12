@@ -15,7 +15,7 @@ object BasicOperators {
       case x: Throwable => l(0) == l(1)
     }
   }
-  val noopOperator = Operator(1, (l, ctx) => l(0))
+  val noopOperator = Operator(0, (l, ctx) => "0")
   val operators = Map(
     "=" -> Operator(2, (l, ctx) => if (isEqual(toValue(l, ctx))) "1" else "0"),
     ":=" -> Operator(2, (l, ctx) => {
@@ -30,6 +30,6 @@ object BasicOperators {
     ";" -> noopOperator,
     "(" -> noopOperator,
     ")" -> noopOperator,
-    "DEBUG" -> Operator(1, (l, ctx) => {println(ctx);l(0)})
+    "DEBUG" -> Operator(0, (l, ctx) => {println(ctx);"0"})
   )
 }
