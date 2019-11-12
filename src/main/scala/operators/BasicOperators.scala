@@ -16,7 +16,7 @@ object BasicOperators {
     }
   }
   val noopOperator = Operator(1, (l, ctx) => l(0))
-  val operators = mutable.Map(
+  val operators = Map(
     "=" -> Operator(2, (l, ctx) => if (isEqual(toValue(l, ctx))) "1" else "0"),
     ":=" -> Operator(2, (l, ctx) => {
       ctx(l(1)) = Screept.getValue(l(0), ctx); Screept.getValue(l(0), ctx)

@@ -29,7 +29,7 @@ object LogicOperators {
     if (logicOperation(toValue(list, ctx), operation)) "1" else "0"
   }
 
-  val operators = mutable.Map(
+  val operators = Map(
     "&"->Operator(2,(l,ctx)=>helper(l,ctx,(_&&_))),
     "|"->Operator(2,(l,ctx)=>helper(l,ctx,(_||_))),
     "!"->Operator(1,(l,ctx)=>if (toBoolean(l(0).toDouble)) "0" else "1"

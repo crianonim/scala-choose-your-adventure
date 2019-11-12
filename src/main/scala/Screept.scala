@@ -1,15 +1,15 @@
 package site.jans.screept
 
 import scala.collection.mutable.Stack
-import scala.collection.mutable.Map
+import scala.collection.mutable
 
 case class Operator(
     arity: Int,
-    f: Function2[Seq[String], Map[String, String], String]
+    f: Function2[Seq[String], mutable.Map[String, String], String]
 )
 
 object Screept {
-  type Context = Map[String, String]
+  type Context = mutable.Map[String, String]
 
   def getValue(operand: String, ctx: Context) = {
     ctx.getOrElse(operand, operand)

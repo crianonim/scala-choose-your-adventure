@@ -31,7 +31,7 @@ object MathOperators {
     val values = toValue(list, ctx).map(_.toDouble)
     if (operation(values(0), values(1))) "1" else "0"
   }
-  val operators = mutable.Map(
+  val operators = Map(
     "+" -> Operator(2, (l, ctx) => helper(l, ctx, (_ + _))),
     "-" -> Operator(2, (l, ctx) => helper(l, ctx, (_ - _))),
     "*" -> Operator(2, (l, ctx) => helper(l, ctx, (_ * _))),
