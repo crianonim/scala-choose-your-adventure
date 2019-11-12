@@ -23,7 +23,7 @@ object Screept {
     }
   }
   def parseIntoTokens(s: String) = {
-    val tokens = new Stack[String]()
+    val tokens = new mutable.ListBuffer[String]()
     var ct = "";
     var quotes = false;
     for (c <- s) {
@@ -32,13 +32,14 @@ object Screept {
         case ' ' =>
           if (quotes) ct += c
           else {
-            tokens.push(ct); ct = ""
+            tokens +=ct
+            ct = ""
           }
         case _ => { ct += c }
       }
     }
-    tokens.push(ct)
-    tokens.filter(x => x != "").reverse.toList
+    tokens+=ct
+    tokens.filter(x => x != "").result()
   }
 
   def evaluate(operators: Map[String, Operator])(ctx: Context)(text: String) = {
