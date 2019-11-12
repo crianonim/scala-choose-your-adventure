@@ -46,7 +46,7 @@ object Game {
 
     val IdExtractor = """^#(.+)""".r
     val EmpyExtractor = """^$""".r
-    val OptionExtractor = """^- (.+) -> (.+)$""".r
+    val OptionExtractor = """^- (.+) \[(.*)\] (.+)$""".r
 
     // currently built Dialog parts
     var id: String = ""
@@ -64,8 +64,8 @@ object Game {
       line match {
         case EmpyExtractor()      => addDialog()
         case IdExtractor(foundId) => id = foundId
-        case OptionExtractor(text, run) =>
-          options = options :+ DialogOption(text, run)
+        case OptionExtractor(text,condition, run) =>
+          options = options :+ DialogOption(text, condition, run)
         case _ => text += line + "\n"
       }
     }

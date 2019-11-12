@@ -1,6 +1,6 @@
 package site.jans.game
 
-case class DialogOption(text:String,run:String)
+case class DialogOption(text:String,condition:String,run:String)
 
 case class Dialog(id:String,title: String, options:Vector[DialogOption]){
    def display():String={
