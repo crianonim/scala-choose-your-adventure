@@ -3,6 +3,7 @@ import site.jans.game._
 import site.jans.screept.MathOperators
 import site.jans.screept.LogicOperators
 import site.jans.screept.BasicOperators
+import scala.annotation.varargs
 object Other {
     def main(args: Array[String]):Unit = {
         val operators=MathOperators.operators++LogicOperators.operators++BasicOperators.operators
@@ -16,13 +17,14 @@ object Other {
         val gs=GameServer(List(s1))
         val gameId=gs.startGame(0)
         val p1=gs.getGame(gameId)
-        println("SHOW",p1.show())
-        p1.play(2);
-        println("SHOW",p1.show())
-        p1.play(1);
-        println("SHOW",p1.show())
-        val p2=gs.getGame(gs.startGame(0))
-        println("SHOW",p2.show())
+        // println("SHOW",p1.show())
+        // p1.play(2);
+        // println("SHOW",p1.show())
+        // p1.play(1);
+        // println("SHOW",p1.show())
+        // val p2=gs.getGame(gs.startGame(0))
+        // println("SHOW",p2.show())
+        gs.cliPlay(p1)
 
     }
 }
