@@ -3,7 +3,7 @@ import site.jans.screept._
 import scala.collection.mutable
 import scala.io.Source
 case class Scenario(
-    id: String,
+    title:String,
     content: String,
     operators: Map[String, Operator],
     initialContext: Map[String, String]
