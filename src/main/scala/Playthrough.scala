@@ -1,7 +1,7 @@
 package site.jans.game
 import scala.collection.mutable
 
-case class Playthrough(id: String,scenario: Scenario, ctx: mutable.Map[String, String]){
+case class Playthrough(scenario: Scenario, ctx: mutable.Map[String, String]){
     def dialog()={
         scenario.dialogs(ctx("dialog"))
     }
