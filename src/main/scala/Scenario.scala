@@ -5,8 +5,10 @@ import scala.io.Source
 case class Scenario(
     id: String,
     content: String,
-    operators: Map[String, Operator]
+    operators: Map[String, Operator],
+    initialContext: Map[String, String]
 ) {
+  def newContext = mutable.Map(initialContext.toSeq:_*)
   val dialogs = {
     var listOfDial = List.empty[(String, Dialog)]
 
@@ -43,7 +45,7 @@ case class Scenario(
   }
 }
 object Scenario {
-    def readScenarioFile(fileName: String): String = {
-        Source.fromFile(fileName).getLines.mkString("\n")
-      }
+  def readScenarioFile(fileName: String): String = {
+    Source.fromFile(fileName).getLines.mkString("\n")
+  }
 }
