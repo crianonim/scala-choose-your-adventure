@@ -49,6 +49,6 @@ case class Scenario(
 }
 object Scenario {
   def readScenarioFile(fileName: String): String = {
-    Source.fromFile(fileName).getLines.mkString("\n")
+    Source.fromFile(fileName).mkString
   }
 }
