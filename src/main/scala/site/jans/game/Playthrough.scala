@@ -8,6 +8,9 @@ case class Playthrough(scenario: Scenario, ctx: mutable.Map[String, String]){
     def eval(toRun:String)={
         scenario.run(ctx,toRun)
     }
+    def interpolate(toInterpolate:String)={
+        scenario.interpolate(ctx,toInterpolate)
+    }
     var validOptions=evaluateValidOptions()
     
     def evaluateValidOptions()={
@@ -15,7 +18,7 @@ case class Playthrough(scenario: Scenario, ctx: mutable.Map[String, String]){
     }
     def show()={
         val d=dialog();
-        ("Head",d.title,validOptions map (_.text))
+        ("Head",interpolate(d.title),validOptions map (_.text))
     }
     def play(option:Int)={
         val toRun =validOptions(option - 1).run

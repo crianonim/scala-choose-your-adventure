@@ -1,5 +1,5 @@
 #start
-Welcome to the test of this wonderful Game,
+Welcome to the test of #{'Jan' 'Other' turn 1 > ?} this wonderful Game,
 You can go left or right from here
 - Go left [] turn 1 + turn := DEBUG #left
 - Go right [a 1 =] #right

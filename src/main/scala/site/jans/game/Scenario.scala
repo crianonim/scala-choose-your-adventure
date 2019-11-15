@@ -43,6 +43,9 @@ case class Scenario(
   def run(ctx: mutable.Map[String, String], toRun: String) = {
     Screept.evaluate(operators)(ctx)(toRun)
   }
+  def interpolate(ctx: mutable.Map[String, String], toRun: String) = {
+    Screept.interpolate(operators)(ctx)(toRun)
+  }
 }
 object Scenario {
   def readScenarioFile(fileName: String): String = {
