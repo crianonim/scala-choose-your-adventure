@@ -1,0 +1,31 @@
+#start
+You wake up in your bed. Your head hurts
+- Stand up [] #room
+- Lie in [] #bed
+
+#bed
+You are in your bed.
+- Stand up [] #room
+
+#room
+You are in your lousy bedroom somewhere in north London.
+- Go to the kitchen [] #kitchen
+- Go back to bed [] #bed
+- Go outside [ate 1 = !] #corridor_hungry
+- Go outside [ate 1 =] #corridor_ate
+
+#kitchen
+You are in the dirty kitchen you share with some random and horrible people.
+- Eat some food [ate 1 = !] 1 ate := #kitchen
+- Back to your room [] #room
+- Go outside [ate 1 = !] #corridor_hungry
+- Go outside [ate 1 =] #corridor_ate
+
+#corridor_hungry
+You stand in the hall of your stinky flatshare and realise that you are too hungry to leave yet.
+- Go to your room [] #room
+- Go to the kitchen [] #kitchen
+
+#corridor_ate
+You ran out of the house finally free! Your freedom is suddenly finished by a bus that just ran you over to save a pigeon.
+
