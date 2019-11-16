@@ -18,7 +18,11 @@ case class GameServer(scenarios: List[Scenario]) {
       }
     } yield result
   }
-  
+  def getStartedGames()={
+    (for {(k,v)<-playthroughs 
+      val result = (k,v.scenario.title)
+    } yield result).toList
+  }
   def getGame(playthrough_id: Int) = {
     playthroughs(playthrough_id)
   }

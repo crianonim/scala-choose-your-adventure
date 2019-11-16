@@ -22,9 +22,10 @@ object Other {
         // println("SHOW",p1.show())
         // p1.play(1);
         // println("SHOW",p1.show())
-        // val p2=gs.getGame(gs.startGame(0))
+        val p2=gs.getGame(gs.startGame(0))
         // println("SHOW",p2.show())
         println(gs.getScenarios())
+        println(gs.getStartedGames())
         // gs.cliPlay(p1)
 
     }
