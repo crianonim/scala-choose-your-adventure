@@ -1,0 +1,659 @@
+#start
+You are an underwater explorer. You are leaving to explore the deepest oceans. You must find
+the lost city of Atlantis. This is your most challenging assignment.
+It is morning and the sun pushes up on the
+horizon. The sea is calm. You climb into the narrow pilot's compartment of the underwater vessel
+Seeker with your special gear. The crew of the
+research vessel Maray screws down the hatch
+clamps. Now begins the plunge into the depths of
+the ocean. The Seeker crew begins lowering by a
+strong, but thin cable. Within minutes, you are so
+deep in the ocean that little light filters down to
+you. The silence is eerie as the Seeker slips deeper
+and deeper. You peer out the thick glass porthole
+and see fish drifting past, sometimes stopping to
+look at you—an intruder from another world.
+Now the cable attaching you to Maray is extended almost to its limit. You have come to rest on
+a ledge near the canyon in the ocean floor that
+supposedly leads to the lost city of Atlantis.
+You have a special sea suit that will protect you
+from the intense pressure of the deep if you choose
+to walk about on the sea bottom. You can cut
+loose from the cable if you wish because the
+Seeker is self-propelled. You are now in another
+world.
+- explore the ledge where the Seeker has come to rest [] -> #p6
+- cut loose from the Maray and dive with the Seeker into the canyon in the ocean floor [] -> #p5
+
+#p5
+You radio a status report to the Moray and tell
+them that you are going to cast off from the line
+and descend under your own power. Your plan is
+approved and you cast off your line. Now you are
+on your own. The Seeker slips noiselessly into the
+undersea canyon.
+As you drop into the canyon, you turn on the
+Seeker's powerful searchlight. Straight ahead is a
+dark wall covered with a strange type of barnacle
+growth. To the left (port) side you see what ap-
+pears to be a grotto. The entrance is perfectly
+round, as if it had been cut by human hands.
+Lantern fish give off a pale, greenish light. To the
+right (starboard) side of the Seeker you see bub-
+bles rising steadily from the floor of the canyon.
+- investigate the bubbles [] -> #p8
+- investigate the grotto with the round entrance [] -> #p9
+
+#p6
+Your sea suit will protect you from the intense
+pressures of the deep. It is a tight fit and takes you
+some time to put it on. Finally you slip from the
+airlock of the Seeker and stand on the ocean floor.
+It is a strange and marvelous world where your
+every move is slowed down. You begin to explore
+with your special hand-held searchlight. You
+examine the ledge by the canyon.
+Suddenly, a school of bright yellow angel fish
+dart by, almost brushing you. What made them
+move so fast? Are they being chased?
+Then you see it. The Seeker is in the grips of a
+huge sea monster. It is similar to a squid, but it is
+enormous. The Seeker is just a toy in its long,
+powerful tentacles. You seek shelter behind a rock
+formation. You know the spear gun you carry will
+be useless against this monster. It looks as though it
+will destroy the Seeker. Fish of all sizes huddle with
+you in an attempt to escape the monster.
+- stay hidden close to the Seeker [] -> #p10
+- try to escape in the hope that rescuers will see you [] -> #p12
+
+#p8
+Carefully, you maneuver the Seeker between
+the walls of the canyon.
+On the floor of the canyon, you discover a large
+round hole out of which flow the large bubbles.
+The Seeker is equipped with scientific equipment
+to analyze the bubbles. It also has sonar equip-
+ment that can measure the depth of any hole.
+- analyze the bubbles [] -> #p11
+- take sonar readings [] -> #p15
+
+#p9
+You pilot the Seeker through the rounded en-
+trance to the grotto. Once inside, your searchlight
+picks up what appear to be docks and piers along
+the grotto walls. The Seeker's searchlight is not
+very powerful. However, you do have a special
+laser light which would light up the grotto like
+daylight. Unfortunately, the laser light can only be
+used twice for very short periods before it must be
+recharged aboard the Maray, now more than
+2,000 feet above you on the surface.
+- use the laser light [] -> #p16
+- cruise further into the grotto [] -> #p14
+
+#p10
+The giant squid tosses and turns the Seeker, but
+finally the creature grows tired of its new game and
+jets off with an enormous squirt of water. You now
+are free to leave your hiding place and examine
+the Seeker for damage.
+To your dismay, the airlock entrance has been
+jammed shut. You are locked out of the Seeker.
+The crew of the Maray, however, suspected trou-
+ble when you did not respond to a routine radio
+check and they are now lowering an escape plat-
+form to you. Once on the platform, you radio them
+to start the slow pull to the surface. To avoid the
+bends—rapid expansion of nitrogen bubbles in
+your blood—they will have to bring you up very
+slowly.
+Just as the platform begins to move, the giant
+squid suddenly returns as if from nowhere. It is
+headed directly at you.
+- fight the squid with your spear gun, hoping to scare it off [] -> #p17
+- signal Maray to pull you up at top speed, knowing you will get the bends [] -> #p18
+
+#p11
+You squeeze into your sea suit and, outside the
+Seeker, you use special equipment to analyze the
+bubbles. As you work, you clumsily knock against
+the valve that dumps the compressed air necessary
+to make the Seeker rise to the surface. There is
+nothing to be done about it; so you continue to
+analyze the bubbles. They contain a high percent-
+age of oxygen and no poisonous gases. Perhaps
+they are coming from some area below the sea
+where human-type beings can live and breathe.
+Perhaps they are coming from Atlantis.
+You wonder whether you should try the
+Seeker's drilling arm to enlarge the source of the
+bubbles so you can explore it with the Seeker. But
+you are also very worried about the Seeker's loss
+of rising capability. You might also be able to trap
+the bubbles and use them to raise the Seeker.
+- collect the bubbles coming from the hole to fill the tanks of the Seeker [] -> #p24
+- drill [] -> #p22
+
+#p12
+Moving cautiously, you climb up the sides of the
+canyon hoping to reach the ocean floor. You leave
+the Seeker in the grips of the giant squid. Your plan
+is to signal for help with a dye marker that will float
+to the surface and make a bright yellow patch in
+the water. The crewmen above have been in-
+structed to watch for such emergency signals.
+They will send help.
+Once you reach the ledge above the canyon
+and feel slightiy safer, you see the most feared of all
+sea creatures— a huge shark. It begins to circle
+towards you and you know that you are its target.
+You wonder whether you should fire your
+emergency propulsion charge that will send you
+rapidly to the surface. The shark is fast; he might
+catch you anyway. You also know that you will get
+the bends from the rapid rise to the surface.
+- fire the special propulsion charge to get to the surface [] -> #p21
+- wait quietly hoping that the shark will go away [] -> #p19
+
+#p14
+You cruise silently into the grotto. Its roof seems
+to slope upward and you follow the slope. The
+depth finder shows that you are rising quite
+rapidly. Perhaps you will reach the surface and
+open air. Then the roof of the grotto stops sloping
+upward. Before you is a perfectly round metallic
+hatch made of a metal that you have never seen
+before. With the mechanical arm of the Seeker
+you try to open the hatch. It will not open. You
+begin to send radio signals at the door hoping to
+make contact on the other side.
+- blow the hatch open with an explosive charge [] -> #p26
+- continue transmitting radio communications through the hatch [] -> #p28
+
+#p15
+You maneuver the Seeker next to the hole and
+begin to take sonar readings to determine the
+depth of the hole. To your amazement, the sonar
+readings indicate that the hole is extraordinarily
+deep— it might reach the center of the earth!
+What lies down there? Where are the bubbles
+coming from? Is Atlantis beneath you?
+Then you notice a disturbing reading on your
+instruments; a mild earthquake has occurred. The
+Seeker is not damaged, but the earthquake could
+set up a tsunami wave on the surface causing the
+Moray to leave for safer areas. It might be danger-
+ous not to get back to the surface and leave with
+the Moray. On the other hand, you are perhaps on
+the verge of one of the world's greatest dis-
+coveries.
+- descend into the hole [] -> #p23
+- return to the surface [] -> #p27
+
+#p16
+The beam from the laser light illuminates the
+entire grotto. Far back on the floor of the grotto is a
+submarine! Cautiously, you maneuver the Seeker
+closer. You identify it as the submarine that myste-
+riously disappeared in the Bermuda Triangle al-
+most a year before. The Bermuda Triangle is more
+than 2000 miles away.
+The submarine is apparently not damaged, but
+it is covered with a slimy algae. Beautiful fish swim
+around it as though it is their own special prize.
+Then you notice that the main hatch is free of
+algae!
+- try to enter the submarine [] -> #p29
+- ruise on through the grotto [] -> #p31
+
+#p17
+With a rush of water, the giant squid attacks you.
+Two 20 foot tentacles with their pulsing suction
+cups reach out trying to ensnare you. You dive off
+the platform and rapidly fire two of your spears.
+They strike the squid close to its two monstrous
+eyes. But the squid keeps on coming.
+One of the tentacles wraps around your diving
+helmet and ruptures the seal to your suit. You fire
+your last spear hoping to hit the monster in a
+vulnerable spot. Water is beginning to trickle into
+your suit. You signal the Maray to haul you up
+fast— "Emergency Hoist." You must have hit the
+squid. It floats away writhing and thrashing. You
+think you're about to black out.
+You wake up on the deck of the Moray and are
+quickly rushed to the decompression chambers to
+ward off the effect of the bends. In a few days you
+are better and start to worry about diving into the
+abyss again.
+- quit the expedition now [] -> #p32
+- go back down to the deep [] -> #p33
+
+#p18
+As they begin the rapid hauling, you lose your
+ability to function in the deep. You start to get dizzy
+and your arms and legs feel weak. You lose your
+hold on the platform and drift in the water
+exhausted. Then you see a dolphin heading to-
+ward you. You know that these marvelous
+mammals sometimes help people in trouble. Will it
+help you?
+- get help from the dolphin [] -> #p34
+- carry on alone swimming to the surface [] -> #p37
+
+#p19
+You wait for the shark to go away. But then you
+notice other sharks coming to join in the hunt.
+They circle you, coming closer and faster each
+time. It is too late. There is no escape!
+The End
+- start again [] -> #start
+
+#p21
+You fire the special propulsion charge and zoom
+upward through the water, frightening schools of
+fish as you go. You become dizzy and lose track of
+where you are. The world seems upside down.
+The shark is nowhere around, you hope. Then
+you break through to the surface floating about a
+half mile from the Maray.
+The lookouts spot you in the water and quickly
+rescue you. Unfortunately, the rapid ascent has
+given you a bad case of the bends. It takes a long
+time to decompress. And when you are finally all
+right, the ship's doctor informs you that your
+underwater days are over. Someone else will have
+to find Atlantis.
+The End
+- start again [] -> #start
+
+#p22
+As you begin to drill, the stream of bubbles
+increases.
+The stream of bubbles is strong enough now to
+ruffle the surface of the sea. You could try to
+surface now and locate the exact position of the
+bubble area. Then you could make plans with the
+scientists aboard the Moray about what to do next.
+But also, you could simply explore the hole with
+the Seeker to determine the source of the bubbles
+now! There is great risk in entering the hole, but it
+could lead to the source of the bubbles and maybe
+to Atlantis.
+- explore [] -> #p38
+- try to surface [] -> #p35
+
+#p23
+Now is the time for decision. You check all the
+controls of the Seeker, grit your teeth, and push
+the control column into the deep dive position.
+Down, down you go where no person has ever
+ventured. The Seeker is built for deep, deep dives,
+but you are descending rapidly mile after mile into
+the deep. The pressure is intense, the darkness is
+complete, and the depth guage indicates an in-
+credible 15 miles. You quickly reverse the control
+column. Warning lights flare up on your control
+panel; they show that gravitational forces are now
+stronger than the Seeker's propulsion motors. You
+have passed the point of no return and your jour-
+ney downward will continue in utter darkness until
+the water pressure is too great for the Seeker. This
+is the final voyage.
+The End
+- start again [] -> #start
+
+#p24
+You are able to capture the bubbling gases and
+fill the tanks of the Seeker, enough to allow it to
+rise. Slowly, the Seeker rises out of the canyon,
+scattering schools of brightly colored fish, and
+brushing past underwater plants that wave like
+palm trees in a wind. Just as you reach the ledge at
+the top of the canyon, you see what appears to be
+an old road! Rocks along its side seem to be guard
+rails. Could this be a path that leads to the lost city
+of Atlantis? You anchor the Seeker and prepare to
+investigate more closely.
+- continue [] -> #p6
+
+#p26
+The only way to get beyond the door is to blast it
+away, or so you believe. The Seeker's laser can-
+non is powerful and you position the Seeker to fire.
+Pushing the fire button, you send a powerful beam
+at the hatch. Nothing happens. Then you advance
+the cannon control to full emergency force. Again
+you push the button and the beam dissolves the
+hatch instantly. A flood of sea water rushes into the
+giant hole, carrying you with it into an air-filled
+cavern beyond. The water fills the cavern with
+speed and explosive force. You see several people
+scurrying towards escape hatches. IT IS TOO
+LATE! You did the wrong thing.
+The End
+- start again [] -> #start
+
+#p27
+Deciding to return to the surface, you direct the
+Seeker cautiously back along the side of the can-
+yon in the ocean floor. Without warning, the
+Seeker is gripped in a powerful current that sweeps
+it toward a grotto. Once in the grotto, the current
+carries you to what appears to be a large metal
+door. It swings open and the Seeker is swept in-
+side. The door closes, the water in the grotto drains
+away, and you step out into a chamber that you
+decide must be made by human hands.
+A door opens in the wall, two people dressed in
+simple clothes come towards you. One of them
+says, "Welcome to Atlantis. We have been expect-
+ing you."
+What a discovery! You have found the lost con-
+tinent and its civilization. The two people tell you
+that although citizens of Atlantis occasionally jour-
+ney to the upper world, anyone who happens
+upon Atlantis is never permitted to leave. The
+Atlanteans are not cruel but fear discovery of their
+world.
+They want you to follow them and you agree.
+But you have another thought. Perhaps you could
+blast your way out of the chamber with the
+Seeker's laser cannon.
+- follow the people and join the Atlantean society [] -> #p39
+- make a dash for the Seeker and try to blast through the closed door with the laser cannon [] -> #p40
+
+#p28
+The radio transmissions seem to be failing, and
+you grow tired of sending signals through the
+closed door. You are just about to give up when
+the door suddenly swings open revealing behind it
+a cavern with another door. You enter the cavern
+cautiously and receive a radio signal in English. It
+tells you that you are welcome here, but that once
+you enter this place, you may never return to the
+world above. It is up to you to decide.
+- go on and investigate what might be Atlantis [] -> #p41
+- retreat [] -> #p42
+
+#p29
+The submarine is indeed mysterious. You now
+have on your sea suit and you open the hatch on
+the conning tower and enter the sub. It is amaz-
+ingly clean and in order. There are no signs of life,
+but there are also no signs of struggle or trouble. In
+the control room, you see a piece of mystifying
+equipment that just doesn't belong on this sub.
+A voice begins telling you that, thousands of
+years ago, the leaders of Atlantis realized that their
+continent was slipping into the sea. They discov-
+ered a large underground cavern and built new
+forms of living quarters for their people. Later
+when Atlantis was deep beneath the ocean, some
+of their scientists discovered and perfected an op-
+eration enabling them to breathe under water.
+The voice, which sounds friendly, also tells you
+that there are two groups in Atlantis. One group is
+good and the other is evil. The voice invites you to
+enter the world of Atlantis and gives directions and
+instructions to a secret passageway to the under-
+water city.
+As you follow directions, you spy an unbeliev-
+able underwater craft with several people in it. It
+must be an Atlantean ship, but are the people
+good or evil? Do they know of the secret passage-
+way?
+- hurry in, trying to reach the secret passageway without being seen [] -> #p43
+- rush back to the Seeker trying to escape danger [] -> #p44
+
+#p31
+You cruise through the grotto past the wreck of
+the submarine and then you spot another ship
+wreck. And then another. They, too, are covered
+with algae, but they appear undamaged. Maybe
+people from Atlantis capture ships in the Bermuda
+Triangle and bring them here. Then you see
+another ship, but this one is a three-masted
+schooner of the type used in the early 1800s. Its
+rigging is festooned with algae, and fish swim lazily
+around its mast.
+Your curiosity captures you and you put on your
+sea suit. Leaving the Seeker, you move towards
+the old sailing ship. Suddenly a thirteen-foot long
+deadly poisonous sea snake strikes from behind
+the forward cabin and bites you in the soft flesh
+between the fingers of your right hand. There is no
+antidote to the deadly poison.
+The End
+- start again [] -> #start
+
+#p32
+With great sorrow, you decide that it is wisest to
+leave the expedition now. You can't risk returning
+to the great depths below. So, you reluctantly
+return to the United States.
+You are invited to tell of your adventures on
+several major television shows. While on one such
+show, a special news flash announces to the world
+the discovery of Atlantis. You regret your decision,
+but you didn't really have a choice. Did you?
+The End
+- start again [] -> #start
+
+#p33
+You can't resist the adventure beneath the sea.
+You must go down again, and after several weeks
+of rest, you enter the Seeker and slip quickly into
+the deep. You bring the Seeker to rest by the great
+canyon in the ocean bottom and, wearing your
+special suit, you venture out into the depths. There
+are no signs of the giant squid and you feel safe.
+Rounding a rock formation, you come upon the
+wreck of an ancient Greek ship. How strange to
+find this ship, intact, so far below the surface. What
+brought it here? Was it visiting Atlantis before the
+lost continent slipped beneath the sea?
+You take pictures and make notes in your spe-
+cial undersea book. Maybe this ancient ship hides
+the secret to Atlantis.
+- go aboard the Greek ship [] -> #p45
+- return to the surface to report your findings [] -> #p46
+
+#p34
+The dolphin looks at you, and you even imagine
+that he is smiling at you. You grab one of his
+flippers and with a powerful switch of his body, the
+dolphin swims upward. In a short time, you break
+through to the surface. You blink in the bright sun.
+The Maray is nowhere in sight. You are lost far at
+sea.
+The dolphin dives beneath the surface with you
+still clinging to him. He speeds off and within 20
+minutes you are next to the Moray. The dolphin
+must have heard the Moray's engine noises un-
+derneath the water.
+Once aboard, everyone congratulates you on
+your escape. You will go down again, but the
+thought keeps haunting you: What if your luck has
+run out?
+- dive again the next day [] -> #p48
+- give up the expedition [] -> #p47
+
+#p35
+You suddenly realize the stream of bubbles is
+powerful enough to raise the Seeker. You guide
+the Seeker into the bubble stream and it heads
+towards the surface. As you swirl upward, you
+begin to notice increasing amounts of brown
+kelp— seaweed. Near the surface, you become
+entangled in the seaweed. The instruments in the
+Seeker indicate that the propellers and the steering
+mechanisms will not work.
+You put on your sea suit and go out to see what
+can be done. Once outside in the kelp, you realize
+that you can't free the Seeker. You start to swim
+for the surface but then you are soon completely
+stuck in the clinging seaweed. You are trapped and
+unable to go forward or return to the Seeker.
+- keep struggling towards the surface [] -> #p50
+- rest quietly, gain strength, and work out a plan [] -> #p53
+
+#p37
+The dolphin might help and might not. You
+decide to chance it alone. So, up you head, swim-
+ming towards the surface. The dolphin follows for
+some time, and then swims off. You rest for awhile
+about 300 feet below the surface before your final
+ascent.
+Then a large fish— ugly, lumpy, puffed up, and
+covered with black and white markings swims to-
+wards you. Its bulging eyes fasten on you. It is a
+big-mouthed grouper, a fish which does not
+bother to bite its victims, but simply swallows them
+whole.
+It looks as though you are its next meal.
+The End
+- start again [] -> #start
+
+#p38
+You decide to guide the Seeker into the new
+passageway to the bubble source. Suddenly the
+Seeker is swept downward as if pulled by a giant
+magnet. You lose consciousness. When you
+awake, you are in a well-lighted and comfortable
+room. Three people are standing close to you.
+They look normal and appear to be friendly.
+The middle one speaks. "You are in the nether
+region of Atlantis. This is a visitors' reception room.
+If you wish to come into the city of Atlantis, then
+follow us; but you may never return to your world.
+If you wish to leave now, we will escort you safely
+to the surface. It is your choice. We do not wish to
+harm you."
+- follow them into the city of Atlantis [] -> #p55
+- return to the surface [] -> #p51 
+
+#p39
+You are led to a room. The floors are a rich
+marble. The walls glow. The ceiling is like being
+inside a diamond looking through the many facets.
+A person who immediately commands respect
+beckons you with firmness and kindness to come
+to her.
+"Welcome to Atlantis. Thousands of years ago
+we learned that we were about to slip into the sea.
+Our people prepared for the calamity by building a
+new city inside an extinct volcano. We have lived
+here in peace and harmony ever since. We have
+no sunlight, nor stars to gaze at, but we have other
+spaces to meditate upon."
+She tells you about a group of people called the
+Nodoors. If you wish, you can live with them, but
+you cannot leave Atlantis.
+A bearded man is to be your escort. Atlantis is a
+beautiful city. Buildings merge one into another,
+colors radiate light, and coral branches fill court-
+yards. There is a sense of well-being and peace.
+It would be pleasant here, but you don'
+t want to
+be a prisoner. Maybe there would be a better
+chance to escape if you join the Nodoors. You ask
+your guide about them.
+"Oh, we believe they are dangerous, but we
+don'
+t really know. They live in the center of the old
+volcano. If you wish, I can take you there."
+- join the Nodoors [] -> #p56
+- remain with the Atlanteans and perhaps get a chance to escape [] -> #p57
+
+#p40
+The Atlanteans have lived in peace for thousands
+of years. They have no love of warfare. Their
+civilization is technologically very advanced and a
+sensing mechanism tells them that you are about
+to use your laser cannon. They quickly fire a spe-
+cial beam at the Seeker that makes all its functions
+stop. You are now powerless to escape. They walk
+up calmly to the Seeker and tell you to come with
+them to Atlantis.
+"You are now part of Atlantis. We understand
+your fear, but do not be frightened. No harm will
+come to you and your life will be full. Follow us."
+As you walk with them, into a new world, you
+wonder if you will ever see the sky again.
+The End
+- start again [] -> #start
+
+#p41
+You are greeted by a group of people who look
+like ordinary human beings except that there are
+gill-like slits on their necks. Their bare feet have
+skin between the toes forming a web. They order
+you to put on your sea suit, pull you quickly from
+the Seeker, and lead you towards their city. On the
+way they show you the zoo where there are ani-
+mals from the world above the sea. There is a
+glass-like cage surrounding them filled with air,
+allowing them to live below the sea.
+The leader of the group explains that if you wish
+you may either submit to an operation to have gills
+inserted so that you may breathe underwater, or
+you may join the other animals in the zoo.
+- agree to the operation [] -> #p58
+- go to the zoo [] -> #p59
+
+#p42
+Back aboard the Seeker, you radio the Maray
+that you are surfacing to make a plan. While rising
+out of the giant crevice-like canyon, you spot what
+appears to be a road running along the top of the
+ledge. What is this? The scientists aboard the
+Maray had mentioned the possibilities of finding
+signs of the ancient civilization, such as roads. You
+must investigate.
+- continue [] -> #p6
+
+#p43
+You escape being seen by the submarine craft.
+Following the instructions you enter a passage-
+way. At the end of the passageway is an airlock
+door and beyond it an incredibly large air-filled
+cavern. Perhaps it is the inside of an extinct vol-
+cano.
+The land is pleasant, although strange to your
+experience. A soft substance covers the ground. It
+seems to be alive. You can'
+t tell. A gentle light
+comes from the sides of this huge cavern. It re-
+minds you of early morning light just before the
+sun rises.
+A group of people approach you with friendly
+gestures. They are wearing simple clothes much
+like the clothes people wore in ancient Greece.
+They are kind and generous. You remove your
+diving suit to find that the air is good to breathe.
+These people speak a language that is unknown
+to you, but one of them acts as an interpreter. You
+find out that this is Atlantis. They tell you it is
+governed by a man who is greedy, selfish, and
+dangerous. The people are like slaves. Everyone is
+unhappy except a few who serve the ruler as his
+lieutenants. These new friends ask for your help.
+Perhaps you can help them escape.
+- leave your new friends and search for the ruler [] -> #p60
+- help your new friends escape [] -> #p61
+
+#p44
+Quickly you get into the Seeker in an attempt to
+escape the strange submarine. You notice that the
+sub is chasing you so you put on full emergency
+ascent power. You could use your laser cannon to
+blast the sub, but you do not wish to hurt anyone.
+The ascent towards the surface is swift, but a few
+fathoms from the surface all systems on the Seeker
+fail. You are suspended in the water in a helpless
+position. It seems that a mysterious force has dis-
+abled you.
+- wait on board the Seeker for help from the Maray [] -> #p64
+- try to escape from the Seeker and try for the surface on your own [] -> #p63
