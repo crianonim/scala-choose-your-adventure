@@ -6,6 +6,7 @@ You can go left or right from here
 - It's Time! [turn 2 >] #left
 - Pick Sword [flag_sword 1 = !] 1 flag_sword :=
 - Random []  #third #start 6 ROLL 6 ROLL + PRINT 3 > ?
+- Fight [] wolf FIGHT
 
 #left
 You decided to go left.
@@ -21,3 +22,8 @@ You loose. Start again
 #third
 You went 3rd
 - Start [] #start
+
+#combat
+Your stamina is #{stamina}
+You will fight #{enemy_name} here with skill #{enemy_skill} and #{enemy_stamina} stamina
+- Attack [] ATTACK
