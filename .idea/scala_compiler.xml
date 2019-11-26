@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ScalaCompilerConfiguration">
-    <profile name="sbt 1" modules="scala-choose-your-adventure,scala-choose-your-adventure_707" />
+    <profile name="sbt 1" modules="choose-your-adventure,scala-choose-your-adventure_762" />
   </component>
 </project>

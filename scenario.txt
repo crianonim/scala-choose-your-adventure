@@ -5,6 +5,7 @@ You can go left or right from here
 - Go right [a 1 =] #right
 - It's Time! [turn 2 >] #left
 - Pick Sword [flag_sword 1 = !] 1 flag_sword :=
+- Random []  #third #start 6 ROLL 6 ROLL + PRINT 3 > ?
 
 #left
 You decided to go left.
@@ -16,3 +17,7 @@ Very interesting
 Bad move
 You loose. Start again
 - Start again [] #start
+
+#third
+You went 3rd
+- Start [] #start
